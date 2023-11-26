@@ -77,7 +77,7 @@ namespace OOP
                 Console.WriteLine("Undefined input!");
             }
 
-            //====================================================
+            //================ Converter Program ===================
 
             var converter = new Converter();
 
