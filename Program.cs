@@ -1,0 +1,84 @@
+﻿using OOP.Classes;
+
+
+namespace OOP
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            // string[] functions = { "Add", "Substract", "Multiply", "Divide" };
+
+            // Console.Write("Select -> Add(0), Substract(1), Multiply(2), Divide(3): ");
+            // var selection = int.Parse(Console.ReadLine());
+
+            // Console.WriteLine("Selection: " + functions[selection]);
+
+            // Console.Write("Num1: ");
+            // var num1 = int.Parse(Console.ReadLine());
+
+            // Console.Write("Num2: ");
+            // var num2 = int.Parse(Console.ReadLine());
+
+            // var calculator = new Calculator();
+
+            // if (selection == 0)
+            // {
+            //     var result = calculator.Add(num1, num2);
+            //     Console.WriteLine(result);
+            // }
+            // else if (selection == 1)
+            // {
+            //     calculator.Substract(num1, num2);
+            // }
+            // else if (selection == 2)
+            // {
+            //     calculator.Multiply(num1, num2);
+            // }
+            // else
+            // {
+            //     calculator.Divide(num1, num2);
+            // }
+
+            //======================= Weather Program ============================
+
+            string[] weathers = { "Rain", "Wind", "Snow", "Cloud", "Winter" };
+
+            Console.Write("Select Weather -> Rain(0), Wind(1), Snow(2), Cloud(3), Winter(4): ");
+            var WeatherSelection = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Selection: " + weathers[WeatherSelection]);
+
+            var weather = new Weather();
+
+            if (WeatherSelection == 0)
+            {
+                weather.Rain();
+            }
+            else if (WeatherSelection == 1)
+            {
+                weather.Wind();
+            }
+            else if (WeatherSelection == 2)
+            {
+                weather.Snow();
+            }
+            else if (WeatherSelection == 3)
+            {
+                weather.Cloud();
+            }
+            else if (WeatherSelection == 4)
+            {
+                weather.Winter();
+            }
+            else
+            {
+                Console.WriteLine("Undefinded input!");
+            }
+
+        }
+    }
+
+}
+
