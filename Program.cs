@@ -8,38 +8,38 @@ namespace OOP
         public static void Main(string[] args)
         {
 
-            // string[] functions = { "Add", "Substract", "Multiply", "Divide" };
+            string[] functions = { "Add", "Substract", "Multiply", "Divide" };
 
-            // Console.Write("Select -> Add(0), Substract(1), Multiply(2), Divide(3): ");
-            // var selection = int.Parse(Console.ReadLine());
+            Console.Write("Select -> Add(0), Substract(1), Multiply(2), Divide(3): ");
+            var selection = int.Parse(Console.ReadLine());
 
-            // Console.WriteLine("Selection: " + functions[selection]);
+            Console.WriteLine("Selection: " + functions[selection]);
 
-            // Console.Write("Num1: ");
-            // var num1 = int.Parse(Console.ReadLine());
+            Console.Write("Num1: ");
+            var num1 = int.Parse(Console.ReadLine());
 
-            // Console.Write("Num2: ");
-            // var num2 = int.Parse(Console.ReadLine());
+            Console.Write("Num2: ");
+            var num2 = int.Parse(Console.ReadLine());
 
-            // var calculator = new Calculator();
+            var calculator = new Calculator();
 
-            // if (selection == 0)
-            // {
-            //     var result = calculator.Add(num1, num2);
-            //     Console.WriteLine(result);
-            // }
-            // else if (selection == 1)
-            // {
-            //     calculator.Substract(num1, num2);
-            // }
-            // else if (selection == 2)
-            // {
-            //     calculator.Multiply(num1, num2);
-            // }
-            // else
-            // {
-            //     calculator.Divide(num1, num2);
-            // }
+            if (selection == 0)
+            {
+                var result = calculator.Add(num1, num2);
+                Console.WriteLine(result);
+            }
+            else if (selection == 1)
+            {
+                calculator.Substract(num1, num2);
+            }
+            else if (selection == 2)
+            {
+                calculator.Multiply(num1, num2);
+            }
+            else
+            {
+                calculator.Divide(num1, num2);
+            }
 
             //======================= Weather Program ============================
 
@@ -74,11 +74,46 @@ namespace OOP
             }
             else
             {
-                Console.WriteLine("Undefinded input!");
+                Console.WriteLine("Undefined input!");
             }
 
+            //====================================================
+
+            var converter = new Converter();
+
+            Console.Write("Km -> M (1), M -> Km (2): ");
+            var select = int.Parse(Console.ReadLine());
+
+            if (select == 1)
+            {
+                Console.WriteLine("Selected: Km -> M");
+            }
+            else if (select == 2)
+            {
+                Console.WriteLine("Selected: M -> Km");
+            }
+            else
+            {
+                Console.WriteLine("Undefinded");
+            }
+
+            Console.Write("Please enter a value: ");
+            var input = int.Parse(Console.ReadLine());
+
+            if (selection == 1)
+            {
+                Console.WriteLine("Selected: Km -> M");
+                converter.KM2M(input);
+            }
+            else if (selection == 2)
+            {
+                Console.WriteLine("Selected: M -> Km");
+                converter.M2KM(input);
+            }
+            else
+            {
+                Console.WriteLine("Undefinded");
+            }
         }
     }
-
 }
-
