@@ -144,6 +144,11 @@ namespace OOP
             var checkEvenOdd = new EvenOrOdd();
             checkEvenOdd.CheckEvenOrOdd();
             checkEvenOdd.Thank();
+
+            //======== Rock Paper Scissors Game =========
+
+            var rockPaperScissors = new RockPaperScissors();
+            rockPaperScissors.Game();
         }
     }
 }
