@@ -133,6 +133,17 @@ namespace OOP
 
             var reversed = new ReversedString();
             reversed.Reversed();
+
+            //============= Word Counter ================
+
+            var wordCount = new WordCount();
+            wordCount.CountWords();
+
+            // ============= Even or Odd ==============
+
+            var checkEvenOdd = new EvenOrOdd();
+            checkEvenOdd.CheckEvenOrOdd();
+            checkEvenOdd.Thank();
         }
     }
 }
