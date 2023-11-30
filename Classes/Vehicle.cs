@@ -44,11 +44,4 @@ namespace OOP.Classes
             Console.WriteLine($"This is a {Color} color {Name}.");
         }
     }
-
-
-
-
-
-
-
 }
