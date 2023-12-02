@@ -9,7 +9,7 @@ namespace OOP.Classes
 
         public void Calculation()
         {
-            Console.WriteLine("Welcome to XYZ Calculator :)");
+            Console.WriteLine("Welcome to XYZ Formulas :)");
             Console.Write("Select a method(1 or 2): 1. (x+y)z  2. (x.y) + (y.z): ");
             var selectedMethod = int.Parse(Console.ReadLine());
 
