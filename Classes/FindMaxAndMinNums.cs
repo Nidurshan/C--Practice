@@ -1,8 +1,8 @@
 namespace OOP.Classes
 {
-    public class FindLargestNum
+    public class FindMaxAndMinNums
     {
-        public FindLargestNum()
+        public FindMaxAndMinNums()
         {
             // Console.WriteLine();
         }
@@ -13,6 +13,8 @@ namespace OOP.Classes
             int largestElement = nums.Max();
 
             Console.WriteLine("The The maximum element in the array is: " + largestElement);
+
+            int minimumElement = nums.Min();
         }
     }
 }
