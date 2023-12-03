@@ -9,8 +9,8 @@ namespace OOP.Classes
 
         public void ArrayMultiply()
         {
-            int[] array1 = {1,9,4,5,3,8,2,7};
-            int[] array2 = {9,5,7,3,6,4,2,8};
+            int[] array1 = {1,9,4,5,-3,8,2,7};
+            int[] array2 = {9,-5,7,3,6,4,2,8};
 
             for(int i = 0; i < array1.Length; i++)
             {
