@@ -186,6 +186,11 @@ namespace OOP
 
             var xyzMultiply = new XYZMultiply();
             xyzMultiply.XYZMultiplication();
+
+            //========= Array Multiply =========
+
+            var multiplyArrayByArray = new MultiplyArrayByArray();
+            multiplyArrayByArray.ArrayMultiply();
         }
     }
 }

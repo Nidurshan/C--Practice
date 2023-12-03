@@ -11,7 +11,7 @@ namespace OOP.Classes
         {
             for(int i = 1; i <= 99; i += 2)
             {
-                Console.Write(i + ", ");
+                Console.WriteLine(i);
             }
         }
     }
