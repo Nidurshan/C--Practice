@@ -17,8 +17,8 @@ namespace OOP.Classes
 
             for(int i = 0; i < numArray.Length; i++)
             {
-                Console.WriteLine(numArray[i] * inputNum);
+                Console.WriteLine(numArray[i] + " × " + inputNum + " = " + (numArray[i] * inputNum));
             }
         }
     }
-}
+} 

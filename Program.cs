@@ -172,6 +172,20 @@ namespace OOP
             var minuteToSecond = new MinuteToSecond();
             minuteToSecond.ConvertMinuteToSecond();
 
+            //========= Age to Days =========
+
+            var ageToDays = new AgeToDays();
+            ageToDays.ConvertAgeToDays();
+
+            //======== Print Odd Numbers ==========
+
+            var printOddNums = new PrintOddNumbers();
+            printOddNums.PrintOddNums();
+
+            //======== XYZ Multiply ===========
+
+            var xyzMultiply = new XYZMultiply();
+            xyzMultiply.XYZMultiplication();
         }
     }
 }
