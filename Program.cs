@@ -211,6 +211,16 @@ namespace OOP
 
             var getRectangleArea = new FindrectangleArea();
             getRectangleArea.GetAnswer();
+
+            //======= Check Less Than 100 ========
+
+            var lessThan100 = new LessThan100();
+            lessThan100.CheckLessThan100();
+
+            //======= Name Greeting =========
+
+            var nameGreeting = new NameGreeting();
+            nameGreeting.GetNameGreeting();
         }
     }
 }
