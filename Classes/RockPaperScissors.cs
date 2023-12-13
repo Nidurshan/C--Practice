@@ -13,12 +13,12 @@ namespace OOP.Classes
             Console.WriteLine("");
 
             Console.Write("Choose Rock, Paper, or Scissors: ");
-            string userChoice = Console.ReadLine();
+            var userChoice = Console.ReadLine();
 
             Random random = new Random();
             string[] options = { "Rock", "Paper", "Scissors" };
-            int computerChoiceIndex = random.Next(options.Length);
-            string computerChoice = options[computerChoiceIndex];
+            var computerChoiceIndex = random.Next(options.Length);
+            var computerChoice = options[computerChoiceIndex];
 
             Console.WriteLine($"You chose: {userChoice}");
             Console.WriteLine($"Computer chose: {computerChoice}");

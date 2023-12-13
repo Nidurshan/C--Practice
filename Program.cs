@@ -41,186 +41,221 @@ namespace OOP
                 calculator.Divide(num1, num2);
             }
 
-            //======================= Weather Program ============================
+            // //======================= Weather Program ============================
 
-            string[] weathers = { "Rain", "Wind", "Snow", "Cloud", "Winter" };
+            // string[] weathers = { "Rain", "Wind", "Snow", "Cloud", "Winter" };
 
-            Console.Write("Select Weather -> Rain(0), Wind(1), Snow(2), Cloud(3), Winter(4): ");
-            var WeatherSelection = int.Parse(Console.ReadLine());
+            // Console.Write("Select Weather -> Rain(0), Wind(1), Snow(2), Cloud(3), Winter(4): ");
+            // var WeatherSelection = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Selection: " + weathers[WeatherSelection]);
+            // Console.WriteLine("Selection: " + weathers[WeatherSelection]);
 
-            var weather = new Weather();
+            // var weather = new Weather();
 
-            if (WeatherSelection == 0)
-            {
-                weather.Rain();
-            }
-            else if (WeatherSelection == 1)
-            {
-                weather.Wind();
-            }
-            else if (WeatherSelection == 2)
-            {
-                weather.Snow();
-            }
-            else if (WeatherSelection == 3)
-            {
-                weather.Cloud();
-            }
-            else if (WeatherSelection == 4)
-            {
-                weather.Winter();
-            }
-            else
-            {
-                Console.WriteLine("Undefined input!");
-            }
-            
-            //================ Converter Program ===================
+            // if (WeatherSelection == 0)
+            // {
+            //     weather.Rain();
+            // }
+            // else if (WeatherSelection == 1)
+            // {
+            //     weather.Wind();
+            // }
+            // else if (WeatherSelection == 2)
+            // {
+            //     weather.Snow();
+            // }
+            // else if (WeatherSelection == 3)
+            // {
+            //     weather.Cloud();
+            // }
+            // else if (WeatherSelection == 4)
+            // {
+            //     weather.Winter();
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Undefined input!");
+            // }
 
-            var converter = new Converter();
+            // //================ Converter Program ===================
 
-            Console.Write("Km -> M (1), M -> Km (2): ");
-            var select = int.Parse(Console.ReadLine());
+            // var converter = new Converter();
 
-            if (select == 1)
-            {
-                Console.WriteLine("Selected: Km -> M");
-            }
-            else if (select == 2)
-            {
-                Console.WriteLine("Selected: M -> Km");
-            }
-            else
-            {
-                Console.WriteLine("Undefinded");
-            }
+            // Console.Write("Km -> M (1), M -> Km (2): ");
+            // var select = int.Parse(Console.ReadLine());
 
-            Console.Write("Please enter a value: ");
-            var input = int.Parse(Console.ReadLine());
+            // if (select == 1)
+            // {
+            //     Console.WriteLine("Selected: Km -> M");
+            // }
+            // else if (select == 2)
+            // {
+            //     Console.WriteLine("Selected: M -> Km");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Undefinded");
+            // }
 
-            if (select == 1)
-            {
-                Console.WriteLine("Selected: Km -> M");
-                converter.KM2M(input);
-            }
-            else if (select == 2)
-            {
-                Console.WriteLine("Selected: M -> Km");
-                converter.M2KM(input);
-            }
-            else
-            {
-                Console.WriteLine("Undefinded");
-            }
+            // Console.Write("Please enter a value: ");
+            // var input = int.Parse(Console.ReadLine());
 
-            //============= Reversed String ================
+            // if (select == 1)
+            // {
+            //     Console.WriteLine("Selected: Km -> M");
+            //     converter.KM2M(input);
+            // }
+            // else if (select == 2)
+            // {
+            //     Console.WriteLine("Selected: M -> Km");
+            //     converter.M2KM(input);
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Undefinded");
+            // }
 
-            var reversed = new ReversedString();
-            reversed.Reversed();
+            // //============= Reversed String ================
 
-            //============= Word Counter ================
+            // var reversed = new ReversedString();
+            // reversed.Reversed();
 
-            var wordCount = new WordCount();
-            wordCount.CountWords();
+            // //============= Word Counter ================
 
-            // ============= Even or Odd ==============
+            // var wordCount = new WordCount();
+            // wordCount.CountWords();
 
-            var checkEvenOdd = new EvenOrOdd();
-            checkEvenOdd.CheckEvenOrOdd();
-            checkEvenOdd.Thank();
+            // // ============= Even or Odd ==============
 
-            //======== Rock Paper Scissors Game =========
+            // var checkEvenOdd = new EvenOrOdd();
+            // checkEvenOdd.CheckEvenOrOdd();
+            // checkEvenOdd.Thank();
 
-            var rockPaperScissors = new RockPaperScissors();
-            rockPaperScissors.Game();
+            // //======== Rock Paper Scissors Game =========
 
-            //========= Adding program =============
+            // var rockPaperScissors = new RockPaperScissors();
+            // rockPaperScissors.Game();
 
-            var add = new Add();
-            add.AddInputs();
+            // //========= Adding program =============
 
-            //========= Find largest element ==========
+            // var add = new Add();
+            // add.AddInputs();
 
-            var findLargestElement = new FindMaxAndMinNums();
-            findLargestElement.FindLargestElement();
+            // //========= Find largest element ==========
 
-            //========= Average ===============
-            
-            var nums = new int[] {20,25,30,40,108};
-            var average = new Average().GetAverage(nums);
-            Console.WriteLine(average);
+            var findMaxAndMinNums = new FindMaxAndMinNums();
+            findMaxAndMinNums.FindLargestElement();
 
-            //========= XYZCalculation ==========
+            // //========= Average ===============
 
-            var xyzCalculation = new XYZCalculation();
-            xyzCalculation.Calculation();
+            // var nums = new int[] { 20, 25, 30, 40, 108 };
+            // var average = new Average().GetAverage(nums);
+            // Console.WriteLine(average);
 
-            //====== Multiplication Table =========
+            // //========= XYZCalculation ==========
 
-            var multiplicationTable = new MultiplicationTable();
-            multiplicationTable.MultiplyFunc();
+            // var xyzCalculation = new XYZCalculation();
+            // xyzCalculation.Calculation();
 
-            //=========== Get Age ===============
+            // //====== Multiplication Table =========
 
-            var printSomethingForAge = new PrintSomethingForAge();
-            printSomethingForAge.Container();
+            // var multiplicationTable = new MultiplicationTable();
+            // multiplicationTable.MultiplyFunc();
 
-            //========= Minute to Seconds ===========
+            // //=========== Get Age ===============
 
-            var minuteToSecond = new MinuteToSecond();
-            minuteToSecond.ConvertMinuteToSecond();
+            // var printSomethingForAge = new PrintSomethingForAge();
+            // printSomethingForAge.Container();
 
-            //========= Age to Days =========
+            // //========= Minute to Seconds ===========
 
-            var ageToDays = new AgeToDays();
-            ageToDays.ConvertAgeToDays();
+            // var minuteToSecond = new MinuteToSecond();
+            // minuteToSecond.ConvertMinuteToSecond();
 
-            //======== Print Odd Numbers ==========
+            // //========= Age to Days =========
 
-            var printOddNums = new PrintOddNumbers();
-            printOddNums.PrintOddNums();
+            // var ageToDays = new AgeToDays();
+            // ageToDays.ConvertAgeToDays();
 
-            //======== XYZ Multiply ===========
+            // //======== Print Odd Numbers ==========
 
-            var xyzMultiply = new XYZMultiply();
-            xyzMultiply.XYZMultiplication();
+            // var printOddNums = new PrintOddNumbers();
+            // printOddNums.PrintOddNums();
 
-            //========= Array Multiply =========
+            // //======== XYZ Multiply ===========
 
-            var multiplyArrayByArray = new MultiplyArrayByArray();
-            multiplyArrayByArray.ArrayMultiply();
+            // var xyzMultiply = new XYZMultiply();
+            // xyzMultiply.XYZMultiplication();
 
-            //======== Print String Copies ========
+            // //========= Array Multiply =========
 
-            var printStringCopies = new PrintStringCopies();
-            printStringCopies.CreateStringCopies();
+            // var multiplyArrayByArray = new MultiplyArrayByArray();
+            // multiplyArrayByArray.ArrayMultiply();
 
-            //========= check Array Contain Odd Nums =========
+            // //======== Print String Copies ========
 
-            var checkArrayContainOdd = new CheckArrayContainOddNum();
-            checkArrayContainOdd.CheckArrayContainOddNumber();
+            // var printStringCopies = new PrintStringCopies();
+            // printStringCopies.CreateStringCopies();
 
-            //======== Find Nth Odd Num ===========
+            // //========= check Array Contain Odd Nums =========
 
-            var findNthOddNum = new FindNthOddNum();
-            findNthOddNum.GetNthOddNumber();
+            // var checkArrayContainOdd = new CheckArrayContainOddNum();
+            // checkArrayContainOdd.CheckArrayContainOddNumber();
 
-            //========= Get rectrangle's area =========
+            // //======== Find Nth Odd Num ===========
 
-            var getRectangleArea = new FindrectangleArea();
-            getRectangleArea.GetAnswer();
+            // var findNthOddNum = new FindNthOddNum();
+            // findNthOddNum.GetNthOddNumber();
 
-            //======= Check Less Than 100 ========
+            // //========= Get rectrangle's area =========
 
-            var lessThan100 = new LessThan100();
-            lessThan100.CheckLessThan100();
+            // var getRectangleArea = new FindrectangleArea();
+            // getRectangleArea.GetAnswer();
 
-            //======= Name Greeting =========
+            // //======= Check Less Than 100 ========
 
-            var nameGreeting = new NameGreeting();
-            nameGreeting.GetNameGreeting();
+            // var lessThan100 = new LessThan100();
+            // lessThan100.CheckLessThan100();
+
+            // //======= Name Greeting =========
+
+            // var nameGreeting = new NameGreeting();
+            // nameGreeting.GetNameGreeting();
+
+            // //======== Check Nums Equal =========
+
+            // var checkNumsEqual = new CheckNumsEqual();
+            // checkNumsEqual.CheckNumsAreEqual();
+
+            // //======== Hours To Seconds =========
+
+            // var hoursToSeconds = new HoursToSeconds();
+            // hoursToSeconds.ConvertHoursToSeconds();
+
+            // //========== Month Finder ===========
+
+            // var monthFinder = new MonthFinder();
+            // monthFinder.GetMonthUsingNum();
+
+            // //=========== FIZZ BUZZ Challenge ============
+
+            // var fizzbuzzChallenge = new FIZZBUZZChallenge();
+            // fizzbuzzChallenge.SolveFIZZBUZZChallenge();
+
+            //=========== Find Largest Number ============
+
+            var findLargestNum = new FindLargestNum();
+            findLargestNum.GetLargestNum();
+
+            //============= Farm Problem ==============
+
+            var farmProblem = new FarmProblem();
+            farmProblem.SolveFarmProblem();
+
+            //========= Inches To Feet ===========
+
+            var inchesToFeet = new InchesToFeet();
+            inchesToFeet.ConvertInchesToFeet();
         }
     }
 }

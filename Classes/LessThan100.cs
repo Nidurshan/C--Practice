@@ -12,7 +12,7 @@ namespace OOP.Classes
             Console.Write("Enter a value: ");
             var input = int.Parse(Console.ReadLine());
 
-            if(input < 100)
+            if (input < 100)
             {
                 Console.WriteLine($"{input} less than 100");
             }
